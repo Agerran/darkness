@@ -1,0 +1,10 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "darkness"
+version = "0.1.0"
+description = "Darkness!"
+requires-python = ">=3.9"
+dependencies = ["requests", "websockets", "fabric"]

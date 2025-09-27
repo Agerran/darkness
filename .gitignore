@@ -1,0 +1,7 @@
+__pycache__
+.plan
+.idea
+.venv
+*.sublime-project
+*.sublime-workspace
+docs/build
