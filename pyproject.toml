@@ -7,4 +7,4 @@ name = "darkness"
 version = "0.1.0"
 description = "Darkness!"
 requires-python = ">=3.9"
-dependencies = ["requests", "websockets", "fabric"]
+dependencies = ["requests", "websockets", "fabric", "munch"]
