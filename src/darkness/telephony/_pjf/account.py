@@ -16,6 +16,7 @@ class PjfAccount(pj.Account):
         self.realm = realm
         self.user = user
         self.password = password
+        self.buddies = {}
         if registrar == "":
             registrar = realm
 
@@ -38,7 +39,7 @@ class PjfAccount(pj.Account):
 
         acfg = pj.AccountConfig()
         acfg.idUri = self.uri
-        acfg.regConfig.registrarUri = f"sip:{self.registrar};transport=tcp"
+        acfg.regConfig.registrarUri = f"sip:{self.registrar}"
         cred = pj.AuthCredInfo("digest", "*", self.user, 0, self.password)
         acfg.sipConfig.authCreds.append( cred )
 
@@ -117,3 +118,26 @@ class PjfAccount(pj.Account):
 
     def expect_event(self, event, timeout=5.0):
         return self.event_handler.expect_event(event, timeout)
+
+    def subscribe(self, package, presence_id):
+        buddy = PjfBuddy(self, presence_id)
+        self.buddies[(presence_id, package)] = buddy
+
+        buddy.subscribePresence(True)
+
+class PjfBuddy(pj.Buddy):
+    def __init__(self, pjf_account, presence_id):
+        super().__init__()
+        cfg = pj.BuddyConfig()
+        cfg.uri = presence_id
+        cfg.subscribe = True
+        cfg.subscribe_dlg_event = False
+        self.create(pjf_account, cfg)
+
+
+    def onBuddyState(self):
+        print("STATE CHANGE!")
+        info = self.getInfo()
+
+        print(info.uri, info.presStatus.statusText, info.subTermCode)
+        return super().onBuddyState()

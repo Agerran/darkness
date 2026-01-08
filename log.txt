@@ -1,0 +1,246 @@
+DEBUG:root:Telephony.Phone[user_commander]: init
+DEBUG:root:Telephony: initializing
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_commander@yorha.pstn.incus.home.arpa][49fdae5a-66b7-441e-a968-4b90dba071a5]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 1
+DEBUG:root:***onCallState.code: 0
+DEBUG:root:***onCallState.reason: 
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x776243875a30>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 3
+DEBUG:root:***onCallState.code: 183
+DEBUG:root:***onCallState.reason: Session Progress
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x776243875a30>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 4
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x776243875a30>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 5
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x776243875a30>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony.Call: hanging up
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 6
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x776243875a30>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony: shutting down
+DEBUG:root:Telephony.Call: shutting down
+DEBUG:root:Telephony.Phone: shutting down
+DEBUG:root:Telephony.Phone[user_commander]: init
+DEBUG:root:Telephony: initializing
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_commander@yorha.pstn.incus.home.arpa][d032b4ce-b860-4dab-9186-5bd70856563f]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 1
+DEBUG:root:***onCallState.code: 0
+DEBUG:root:***onCallState.reason: 
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x77793e1598e0>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 3
+DEBUG:root:***onCallState.code: 183
+DEBUG:root:***onCallState.reason: Session Progress
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x77793e1598e0>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 4
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x77793e1598e0>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 5
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x77793e1598e0>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony.Call: hanging up
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 6
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x77793e1598e0>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony: shutting down
+DEBUG:root:Telephony.Call: shutting down
+DEBUG:root:Telephony.Phone: shutting down
+DEBUG:root:Telephony.Phone[user_commander]: init
+DEBUG:root:Telephony: initializing
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_commander@yorha.pstn.incus.home.arpa][40d9e7de-1263-42ff-97dc-e4b3512c06d4]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:Telephony.Phone[user_yorha-2b]: init
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_yorha-2b@yorha.vivsup1293.incus.home.arpa][bd18a5ac-3f44-4a93-93a4-2b90a48aaebf]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 1
+DEBUG:root:***onCallState.code: 0
+DEBUG:root:***onCallState.reason: 
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7b5ad6be9e80>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 3
+DEBUG:root:***onCallState.code: 183
+DEBUG:root:***onCallState.reason: Session Progress
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7b5ad6be9e80>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony: shutting down
+DEBUG:root:Telephony.Call: shutting down
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 6
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7b5ad6be9e80>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony.Phone: shutting down
+DEBUG:root:Telephony.Phone: shutting down
+DEBUG:root:Telephony: shutting down
+DEBUG:root:Telephony.Phone[user_commander]: init
+DEBUG:root:Telephony: initializing
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_commander@yorha.pstn.incus.home.arpa][d8f00c7d-a63d-4271-81f5-a80d510f0007]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:Telephony.Phone[user_yorha-2b]: init
+DEBUG:root:Telephony.Account: __init__
+DEBUG:root:Telephony.Account: registering
+DEBUG:root:Telephony.Account[sip:user_yorha-2b@yorha.vivsup1293.incus.home.arpa][4e974bc0-7066-4522-a97e-7708158b4939]: onRegState code=200 reason='OK' expiration=300
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 1
+DEBUG:root:***onCallState.code: 0
+DEBUG:root:***onCallState.reason: 
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7571748f2c00>
+DEBUG:root:***onCallState ended
+DEBUG:root:SIP message: INVITE sip:user_yorha-2b@10.230.182.1:15061;ob SIP/2.0
+DEBUG:root:SIP message: Record-Route: <sip:10.230.182.9;lr=on;ftag=jQ2vmFZamgQHe>
+DEBUG:root:SIP message: Via: SIP/2.0/UDP 10.230.182.9;branch=z9hG4bK44a4.1b26ca924e15f6ef48f84bdd6bbcae2d.0
+DEBUG:root:SIP message: Via: SIP/2.0/UDP 10.230.182.9:11000;received=10.230.182.9;rport=11000;branch=z9hG4bKyvXveBjvH7U7g
+DEBUG:root:SIP message: Max-Forwards: 46
+DEBUG:root:SIP message: From: "commander" <sip:100@yorha.vivsup1293.incus.home.arpa>;tag=jQ2vmFZamgQHe
+DEBUG:root:SIP message: To: <sip:user_yorha-2b@yorha.vivsup1293.incus.home.arpa>
+DEBUG:root:SIP message: Call-ID: 32571963-7540-4ea2-8650-5f8a55133438
+DEBUG:root:SIP message: CSeq: 87880669 INVITE
+DEBUG:root:SIP message: Contact: <sip:mod_sofia@10.230.182.9:11000;alias=10.230.182.9~11000~1>
+DEBUG:root:SIP message: User-Agent: 2600hz
+DEBUG:root:SIP message: Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY, PUBLISH, SUBSCRIBE
+DEBUG:root:SIP message: Supported: path, replaces
+DEBUG:root:SIP message: Allow-Events: talk, hold, conference, presence, as-feature-event, dialog, line-seize, call-info, sla, include-session-description, presence.winfo, message-summary, refer
+DEBUG:root:SIP message: Content-Type: application/sdp
+DEBUG:root:SIP message: Content-Disposition: session
+DEBUG:root:SIP message: Content-Length: 802
+DEBUG:root:SIP message: K-Vivant-Tags-Call-ID: e445efa9-255b-4c8a-b535-0bb52fa431ba
+DEBUG:root:SIP message: K-Vivant-Tags-Rules: %5B%7B%22group%22%3A%22call%22%2C%22rule%22%3A%22optional%22%7D%5D
+DEBUG:root:SIP message: Remote-Party-ID: "commander" <sip:100@yorha.vivsup1293.incus.home.arpa>;party=calling;screen=yes;privacy=off
+DEBUG:root:SIP message: 
+DEBUG:root:SIP message: v=0
+DEBUG:root:SIP message: o=FreeSWITCH 1724841389 1724841390 IN IP4 10.230.182.9
+DEBUG:root:SIP message: s=FreeSWITCH
+DEBUG:root:SIP message: c=IN IP4 10.230.182.9
+DEBUG:root:SIP message: t=0 0
+DEBUG:root:SIP message: m=audio 27534 RTP/AVP 96 97 98 3 0 8 9 102 103 104 101 13 105 106 107 108
+DEBUG:root:SIP message: a=rtpmap:96 SPEEX/16000
+DEBUG:root:SIP message: a=rtpmap:97 SPEEX/8000
+DEBUG:root:SIP message: a=rtpmap:98 SPEEX/32000
+DEBUG:root:SIP message: a=rtpmap:3 GSM/8000
+DEBUG:root:SIP message: a=rtpmap:0 PCMU/8000
+DEBUG:root:SIP message: a=rtpmap:8 PCMA/8000
+DEBUG:root:SIP message: a=rtpmap:9 G722/8000
+DEBUG:root:SIP message: a=rtpmap:102 opus/48000/2
+DEBUG:root:SIP message: a=fmtp:102 useinbandfec=1; maxaveragebitrate=30000; maxplaybackrate=48000; ptime=20; minptime=10; maxptime=40; stereo=1
+DEBUG:root:SIP message: a=rtpmap:103 telephone-event/16000
+DEBUG:root:SIP message: a=fmtp:103 0-16
+DEBUG:root:SIP message: a=rtpmap:104 CN/16000
+DEBUG:root:SIP message: a=rtpmap:101 telephone-event/8000
+DEBUG:root:SIP message: a=fmtp:101 0-16
+DEBUG:root:SIP message: a=rtpmap:13 CN/8000
+DEBUG:root:SIP message: a=rtpmap:105 telephone-event/32000
+DEBUG:root:SIP message: a=fmtp:105 0-16
+DEBUG:root:SIP message: a=rtpmap:106 CN/32000
+DEBUG:root:SIP message: a=rtpmap:107 telephone-event/48000
+DEBUG:root:SIP message: a=fmtp:107 0-16
+DEBUG:root:SIP message: a=rtpmap:108 CN/48000
+DEBUG:root:SIP message: a=ptime:20
+DEBUG:root:SIP message: 
+DEBUG:root:Pickuping
+DEBUG:root:***onCallState.callId: 1
+DEBUG:root:***onCallState.state: 2
+DEBUG:root:***onCallState.code: 100
+DEBUG:root:***onCallState.reason: Trying
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: None
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 1
+DEBUG:root:***onCallState.state: 4
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: None
+DEBUG:root:***onCallState ended
+DEBUG:root:Pickuping end
+DEBUG:root:***onCallState.callId: 1
+DEBUG:root:***onCallState.state: 5
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: None
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 4
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7571748f2c00>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 5
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7571748f2c00>
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony.Call: hanging up
+DEBUG:root:***onCallState.callId: 0
+DEBUG:root:***onCallState.state: 6
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: OK
+DEBUG:root:***onCallState.disconnect_fut: None
+DEBUG:root:***onCallState.answer_event: <darkness.telephony.tf.TelephonyFuture object at 0x7571748f2c00>
+DEBUG:root:***onCallState ended
+DEBUG:root:***onCallState.callId: 1
+DEBUG:root:***onCallState.state: 6
+DEBUG:root:***onCallState.code: 200
+DEBUG:root:***onCallState.reason: Normal call clearing
+DEBUG:root:***onCallState.disconnect_fut: <darkness.telephony.tf.TelephonyFuture object at 0x7571745ddbb0>
+DEBUG:root:***onCallState.answer_event: None
+DEBUG:root:***onCallState ended
+DEBUG:root:Telephony: shutting down
+DEBUG:root:Telephony.Call: shutting down
+DEBUG:root:Telephony.Call: shutting down
+DEBUG:root:Telephony.Phone: shutting down
+DEBUG:root:Telephony.Phone: shutting down

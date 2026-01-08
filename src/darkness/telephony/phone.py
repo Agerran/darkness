@@ -65,7 +65,10 @@ class Phone:
 
     def expect_event(self, event_name, timeout=5.0):
         return self.pjf_account.expect_event(event_name, timeout)
-        
+
+    def subscribe(self, package, presence_id):
+        return self.pjf_account.subscribe(package, presence_id)
+
     def __enter__(self):
         if not self.registered():
             print("Entering context")

@@ -42,7 +42,7 @@ class Telephony(metaclass=SingletoneMeta):
         debug("Telephony: initializing")
         # Create and initialize the library
         ep_cfg = pj.EpConfig()
-        ep_cfg.logConfig.level = 0
+        ep_cfg.logConfig.level = 4
         # ep_cfg.logConfig.level = 4 # set to 4 for reading SIP messages
         ep_cfg.medConfig.channelCount = 2
         if 'userAgent' in kwargs:
@@ -52,9 +52,13 @@ class Telephony(metaclass=SingletoneMeta):
         ep.libInit(ep_cfg)
 
         # Create SIP transport. Error handling sample is shown
-        sipTpConfig = pj.TransportConfig()
-        sipTpConfig.port = 15061
-        ep.transportCreate(pj.PJSIP_TRANSPORT_TCP, sipTpConfig)
+        #sipTcpTpConfig = pj.TransportConfig()
+        #sipTcpTpConfig.port = 15061
+        #ep.transportCreate(pj.PJSIP_TRANSPORT_TCP, sipTcpTpConfig)
+
+        sipUdpTpConfig = pj.TransportConfig()
+        sipUdpTpConfig.port = 15060
+        ep.transportCreate(pj.PJSIP_TRANSPORT_UDP, sipUdpTpConfig)
         # Start the library
         ep.libStart()
         self.ep: PjTelephony = ep

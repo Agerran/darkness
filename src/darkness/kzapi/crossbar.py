@@ -81,7 +81,6 @@ class CrossbarElement:
 
     def create(self, data, **kwargs):
         result = self.executor.request(self.path_parts, method='put', data=data, **kwargs)
-        print(data)
         id = result['data']['id']
         element = CrossbarElement(self.executor, self.path_parts + [id], data=result['data'])
         self.cached[id] = element
@@ -356,7 +355,6 @@ class Crossbar:
                 raise CrossbarError(url, r.status_code, ce.message, data)
 
     def api_request(self, url, *args, **kwargs):
-        # print("URL", url)
         result = self.request(url, *args, **kwargs)
         retrequest = 'retrequest' in kwargs and kwargs['retrequest']
         if retrequest:

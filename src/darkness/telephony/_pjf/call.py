@@ -16,8 +16,9 @@ class PjfCall(pj.Call):
         self.ended = False
         self.disconnect_event: Optional[TelephonyFuture] = None
         waw_file_path = 'telephony/aria.wav'
-        with importlib.resources.path("darkness", waw_file_path) as waw_filename:
-            self.player.createPlayer(waw_filename)
+        with importlib.resources.path("darkness", waw_file_path) as wav_filename:
+            print(str(wav_filename))
+            self.player.createPlayer(str(wav_filename))
             self.request_headers = []
             if 'request_headers' in kwargs:
                 self.request_headers = kwargs['request_headers']
