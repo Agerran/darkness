@@ -1,0 +1,77 @@
+## Problem statement
+
+We have several different clusters, so we cannot just write one URL in mobile (or any client) app,
+we have to have some way to point client app to what cluster it has to use.
+
+We have two ways of setting up application: manual, with user-defined values for URLs and 
+login/password, and automatic, with OTP code. As of now (January 2026) login via code is hard wired
+to cluster where code is generated and there are no ways to determine where it was generated.
+
+Our SIP realms are not bound to clusters. All realms we are using are in a format
+<client_name>.pbx-cloud.velvetel.net , again with no distinction between clusters.
+We don't have global DNS service to automatically bind realm domains to clusters.
+Because of that, we are not connecting to SIP or backend with realm URLs, but instead we are
+connecting with cluster URLs.
+
+## Solution 1
+
+Create some global service, kind of load balancer, that will point client app to required cluster.
+This service will be integrated with DNS and OTP codes generation. This service will:
+- answer to account creation attempts from all clusters: it will validate if this realm is available
+- provide DNS records to our dns servers via zone transfer mechanism (AXFR)
+- will generate OTP codes by request from some external clluster
+- will answer to mobile application requests with OTP codes, providing all required info,
+  including not only sip credentials, but also URLs for SIP, backend, etc...
+
+### Pros:
+
+- no need to update client applications when we create new cluster
+- all DNS records bound to realms and pointing to real cluster, easy to use from all clients,
+  be it hardware phone, mobile app or Creatio.
+
+### Cons:
+
+- longest to implement
+- some initial efforts to make realms across clusters consistent
+- Single point of failure
+
+## Solution 2
+
+Rework manual setup, make it with these fields:
+- SIP realm (required)
+- SIP username (required)
+- SIP password (required)
+- PROXY (optional)
+
+```pseudocode
+const server = proxy ? proxy : realm
+const wss_url = 'wss://{server}:5065'
+const backend_url = 'https://{server}'
+```
+
+Add prefix to code generation. Hardwire prefix values in both server configurations and mobile application,
+e.g.:
+
+'0' - staging   pbx-staging
+'1' - prod US   api: portal-us.pbx-cloud.velvetel.net   sip: portal-us.pbx-cloud.velvetel.net
+'2' - prod EU   api: portal-eu.pbx-cloud.velvetel.net   sip: portal-eu.pbx-cloud.velvetel.net
+'3' - prod SEA  api: portal-sea.pbx-cloud.velvetel.net  sip: portal-sea.pbx-cloud.velvetel.net
+
+In order to keep same level of security, mobile application should be updated, now we have 6-digits
+codes, with prefix it will be 7 digits.
+
+### Pros:
+
+- easy to implement
+- if setup correctly, nice and reliable
+
+### Cons:
+
+- need to reupload application to stores whenever cluster/prefixes configuration changes
+
+
+## Proposal
+
+Start with implementing solution 2.
+
+Next: start to work solution 1 - describe full specification

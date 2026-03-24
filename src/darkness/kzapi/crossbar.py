@@ -262,7 +262,6 @@ class Crossbar:
         return self.make_auth_request()
 
     def make_auth_request(self, retresult=False):
-        print("MAKING AUTH REQUEST",self.auth_user, self.auth_password, self.account_name)
         credentials = self.calculate_credentials()
 
         (r, rdata) = self._request('user_auth', version='v2', data={'credentials': credentials, 'account_name': self.account_name}, method='put')
